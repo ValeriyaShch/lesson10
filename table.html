@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>table</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <ul class="list">
+          <li class="home"><a href="index.html">home</a></li>
+          <li class="gallery">
+            <a href="gallery.html">gallery</a>
+          </li>
+          <li class="homeworks">
+            <a href="#">homeworks</a>
+            <ul class="hw-list">
+              <li><a href="table.html">table</a></li>
+              <li>
+                <a href="inline-block.html">inline-block</a>
+              </li>
+              <li><a href="float.html">float</a></li>
+              <li class="layouts">
+                <a href="#">layouts</a>
+                <ul class="flex">
+                  <li><a href="flex.html">flex</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </header>
+    <div class="container">
+      <table class="table-container">
+        <tbody>
+          <tr class="height-100 width-100 border">
+            <td colspan="2" class="height-100 width-100 border bg-gray"></td>
+
+            <td class="height-100 width-100 border bg-green"></td>
+            <td class="height-100 width-100 border bg-green"></td>
+            <td class="height-100 width-100 border bg-green"></td>
+            <td
+              rowspan="3"
+              class="height-100 width-100 border bg-lightgreen"
+            ></td>
+          </tr>
+          <tr class="height-100 width-100 border">
+            <td
+              rowspan="2"
+              class="height-100 width-100 border bg-darkgreen"
+            ></td>
+            <td class="height-100 width-100 border bg-green"></td>
+            <td
+              class="height-100 width-100 border bg-yellow"
+              rowspan="2"
+              colspan="3"
+            ></td>
+          </tr>
+          <tr class="height-100 width-100 border">
+            <td class="height-100 width-100 border bg-green"></td>
+          </tr>
+          <tr class="height-100 width-100 border">
+            <td
+              class="height-100 width-100 border bg-blue"
+              rowspan="2"
+              colspan="3"
+            ></td>
+
+            <td class="height-100 width-100 border bg-green"></td>
+            <td class="height-100 width-100 border bg-green"></td>
+            <td
+              class="height-100 width-100 border bg-darkgreen"
+              rowspan="2"
+            ></td>
+          </tr>
+          <tr class="height-100 width-100 border">
+            <td class="height-100 width-100 border bg-gray" colspan="2"></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </body>
+</html>

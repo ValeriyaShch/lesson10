@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flex</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <ul class="list">
+          <li class="home"><a href="index.html">home</a></li>
+          <li class="gallery">
+            <a href="gallery.html">gallery</a>
+          </li>
+          <li class="homeworks">
+            <a href="#">homeworks</a>
+            <ul class="hw-list">
+              <li><a href="table.html">table</a></li>
+              <li>
+                <a href="inline-block.html">inline-block</a>
+              </li>
+              <li><a href="float.html">float</a></li>
+              <li class="layouts">
+                <a href="#">layouts</a>
+                <ul class="flex">
+                  <li><a href="flex.html">flex</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </header>
+    <div class="container container-hw">
+      <div class="d-flex bg-blue">
+        <div class="width-400 height-400 outline">1</div>
+        <div class="width-400 height-400 outline">2</div>
+        <div class="width-400 height-400 outline">3</div>
+      </div>
+      <div class="d-flex bg-yellow">
+        <div class="width-800">
+          <div class="height-200 outline">4</div>
+          <div class="height-200 outline">5</div>
+        </div>
+        <div class="width-400">
+          <div class="outline height-133">6</div>
+          <div class="outline height-133">7</div>
+          <div class="outline height-133">8</div>
+        </div>
+      </div>
+      <div class="d-flex bg-orange">
+        <div class="width-400 height-400 outline">9</div>
+        <div class="width-800">
+          <div class="height-200 outline">10</div>
+          <div class="d-flex">
+            <div class="width-400 height-200 outline">11</div>
+            <div class="width-400">
+              <div class="height-100 outline">12</div>
+              <div class="height-100 outline">13</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

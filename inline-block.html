@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Inline-block</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+   <header class="header">
+      <div class="container">
+        <ul class="list">
+          <li class="home"><a href="index.html">home</a></li>
+          <li class="gallery">
+            <a href="gallery.html">gallery</a>
+          </li>
+          <li class="homeworks">
+            <a href="#">homeworks</a>
+            <ul class="hw-list">
+              <li><a href="table.html">table</a></li>
+              <li>
+                <a href="inline-block.html">inline-block</a>
+              </li>
+              <li><a href="float.html">float</a></li>
+              <li class="layouts">
+                <a href="#">layouts</a>
+                <ul class="flex">
+                  <li><a href="flex.html">flex</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </header>
+    <div class="container container-hw">
+      <div class="bg-blue fs-0">
+        <div class="width-400 height-400 outline in-block fs-16">1</div>
+        <div class="width-400 height-400 outline in-block fs-16">2</div>
+        <div class="width-400 height-400 outline in-block fs-16">3</div>
+      </div>
+      <div class="bg-yellow fs-0">
+        <div class="width-800 in-block fs-16 vert-align">
+          <div class="height-200 outline">4</div>
+          <div class="height-200 outline">5</div>
+        </div>
+        <div class="width-400 in-block fs-16 vert-align">
+          <div class="outline height-133">6</div>
+          <div class="outline height-133">7</div>
+          <div class="outline height-133">8</div>
+        </div>
+      </div>
+      <div class="bg-orange fs-0">
+        <div class="width-400 height-400 outline in-block fs-16 vert-align">
+          9
+        </div>
+        <div class="width-800 in-block fs-16 vert-align">
+          <div class="height-200 outline">10</div>
+          <div class="fs-0">
+            <div class="width-400 height-200 outline in-block vert-align">
+              11
+            </div>
+            <div class="width-400 in-block vert-align">
+              <div class="height-100 outline">12</div>
+              <div class="height-100 outline">13</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
