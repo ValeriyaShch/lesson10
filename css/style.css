@@ -161,6 +161,14 @@ button {
   margin: 0 auto;
   padding: 0 15px;
 }
+.wrapper {
+  display: flex;
+  flex-flow: column;
+  min-height: 100vh;
+}
+main {
+  flex: 1;
+}
 .header {
   padding: 15px 0;
   background: olive;
@@ -178,6 +186,7 @@ button {
   font-family: "Montserrat-Bold";
   font-weight: 700;
 }
+
 .gallery {
   font-family: "Roboto-Bold";
   font-weight: 700;
@@ -197,10 +206,25 @@ button {
   display: block;
   text-decoration: none;
   color: rgb(30, 43, 5);
-  padding: 10px 20px;
-  background: rgb(91, 120, 41);
+
   border-radius: 8px;
   white-space: nowrap;
+}
+.home-item {
+  padding: 10px 20px 10px 40px;
+  background: rgb(91, 120, 41) url(../img/home-1-svgrepo-com.svg) no-repeat 5px
+    3px;
+}
+.gallery-item {
+  padding: 10px 20px 10px 40px;
+  background: rgb(91, 120, 41) url(../img/gallery.svg) no-repeat 5px 5px;
+}
+.homeworks-item {
+  padding: 10px 40px 10px 20px;
+  background: rgb(91, 120, 41) url(../img/arrow-sm-down.svg) no-repeat 220px 7px;
+}
+.layouts-item {
+  background: rgb(191, 217, 147) url(../img/arrow-sm-left.svg) no-repeat;
 }
 .hw-list {
   position: absolute;
@@ -211,9 +235,14 @@ button {
   padding-top: 15px;
 }
 
-.hw-list li a {
+.hw-list li {
   background: rgb(191, 217, 147);
+  border-radius: 8px;
   border: 2px solid rgb(30, 43, 5);
+}
+
+.layouts-item {
+  background: url(../img/arrow-sm-left.svg) no-repeat 5px -3px;
 }
 .flex {
   position: absolute;
@@ -374,4 +403,30 @@ button {
 }
 .movie_item:hover {
   text-decoration: underline;
+}
+.footer {
+  background: olive;
+  padding: 15px 0;
+}
+.social-list {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+.social-list li a {
+  display: block;
+  width: 30px;
+  height: 30px;
+}
+.inst {
+  background: url(../img/instagram.svg) no-repeat 50%/30px;
+}
+.telegram {
+  background: url(../img/telegram.svg) no-repeat 50%/30px;
+}
+.viber {
+  background: url(../img/viber.svg) no-repeat 50%/30px;
+}
+.mail {
+  background: url(../img/gmail.svg) no-repeat 50%/30px;
 }
