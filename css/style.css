@@ -156,6 +156,60 @@ button {
   cursor: pointer;
 }
 /* __________ */
+/* !sidebar */
+.sidebar-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 92px;
+  overflow: hidden;
+  background: rgb(191, 217, 147);
+  transition: all 1s linear;
+  border-right: 3px solid olive;
+  padding-top: 74px;
+}
+.sidebar-menu:hover + .wrapper {
+  padding-left: 350px;
+}
+.sidebar-menu:hover {
+  width: 350px;
+}
+.sidebar-list {
+  padding: 0 5px;
+}
+.sidebar-list:hover {
+  background: olive;
+}
+.sidebar-item {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  padding: 15px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: rgb(30, 43, 5);
+  font-family: "Montserrat-Bold";
+  font-weight: 700;
+  font-size: 22px;
+}
+.sidebar-item:hover .sidebar-svg {
+  transform: rotate(45deg) scale(1.5);
+}
+.svg-frame {
+  border: 4px solid black;
+  line-height: 10px;
+  padding: 4px;
+  transform: rotate(-45deg);
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.sidebar-svg {
+  width: 40px;
+  height: 40px;
+  transform: rotate(45deg);
+  transition: all 0.5s linear;
+}
 .container {
   max-width: 1230px;
   margin: 0 auto;
@@ -165,9 +219,17 @@ button {
   display: flex;
   flex-flow: column;
   min-height: 100vh;
+  padding-left: 92px;
+  transition: all 1s linear;
 }
 main {
   flex: 1;
+  background: lightgoldenrodyellow;
+}
+.main-text {
+  padding-top: 15px;
+  text-align: justify;
+  font-size: 18px;
 }
 .header {
   padding: 15px 0;
@@ -200,7 +262,7 @@ main {
   z-index: 1;
 }
 .list > li:hover .hw-list {
-  display: block;
+  transform: translateY(0);
 }
 .list li a {
   display: block;
@@ -231,8 +293,10 @@ main {
   left: 0;
   top: 100%;
   right: 0;
-  display: none;
+
   padding-top: 15px;
+  transform: translateY(-500%);
+  transition: transform 1s ease;
 }
 
 .hw-list li {
@@ -246,16 +310,18 @@ main {
 }
 .flex {
   position: absolute;
+  z-index: -1;
   top: 0;
   left: -100%;
   width: 100%;
-  display: none;
+  transform: translateX(100%);
+  transition: transform 0.5s linear;
 }
 .layouts {
   position: relative;
 }
 .layouts:hover .flex {
-  display: block;
+  transform: translateX(0);
 }
 /* _________________ */
 .container-hw {
